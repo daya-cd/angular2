@@ -18,6 +18,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
+            /*
+             Componet decorator
+             Prefix for clarity
+            */
             AppComponent = (function () {
                 function AppComponent() {
                     this.pageTitle = 'creative design product management';
