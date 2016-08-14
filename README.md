@@ -1,1 +1,1 @@
-# angular2 tutorial
+# angular2 tutorial from pluralsight
