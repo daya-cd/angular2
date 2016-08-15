@@ -1,5 +1,6 @@
 
 import {Component} from 'angular2/core';
+import {ProductListComponent} from './products/product-list.component';
 
 /* 
  Componet decorator
@@ -7,7 +8,12 @@ import {Component} from 'angular2/core';
 */
 @Component({
     selector: 'pm-app',
-    template: '<div>{{pageTitle}}</div>'
+    template: 
+    `<div>
+    <h1>{{pageTitle}}</h1> 
+    <pm-products></pm-products>
+    </div>`,
+    directives:[ProductListComponent] //using component as directive
 })
 
 
@@ -17,7 +23,7 @@ export class AppComponent {
 
   pageTitle: string = 'creative design product management';
 
-  // camelCase with first letter lowercase - for data type
+  // camelCase with   letter lowercase - for data type
   
 }
 

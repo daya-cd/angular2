@@ -16,8 +16,6 @@ we can import in loader of the application like eg)
 
 ``` import { Component }  from 'angular2/core' ```
 
-
-
 ## Component
 
  Component = ** Template + Class + Meta data **
@@ -28,6 +26,23 @@ we can import in loader of the application like eg)
      * view layout
      * created with html
      * including binding and directives
+
+    #### LinkedTemplate
+
+    ```javascript
+    templateUrl:'product-list.component.html'
+    ```
+    #### Binding
+
+    * Coordinates communication between component's class and its template and ofter involves passing data.
+
+    #### Direcrives
+
+    * Custom html element or attribute used to power up and extend our HTML
+    * We can achieve using custom directive or angular directives.They are three directives.
+      * structural directives starts with '*'' infornt of it Eg) '*ngIf'.
+      * Attribute directives.
+      * Components.
 
   ### Class (Properites+Methods)
 
