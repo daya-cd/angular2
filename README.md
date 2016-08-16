@@ -57,6 +57,12 @@ we can import in loader of the application like eg)
     * Defined with decorator.
 
 
+# Data binding
+ 
+ ### Property binding
+
+  <img [src]='product.imageurl'> //like interpolation.
+
 ## Notes:
 
 What is Typings ?
