@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-
+import { IProduct} from './products';
 @Component({
 	selector:'pm-products',
-	templateUrl: 'app/products/product-list.component.html'
+	templateUrl: 'app/products/product-list.component.html',
+	styleUrls:['app/products/product-list.component.css']
 })
 export class ProductListComponent {
 
@@ -13,7 +14,7 @@ export class ProductListComponent {
 	listFilter:string='cart';
 
 	//type of variables that we do not know when we are writing an application
-	products:any[]= [
+	products:IProduct[]= [
 	{
 		"productId": 1,
 		"productName": "Leaf Rake",
