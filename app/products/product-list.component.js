@@ -9,10 +9,11 @@ exports.__esModule = true;
 var core_1 = require("@angular/core");
 var ProductListComponent = (function () {
     function ProductListComponent() {
-        this.pageTitle = 'Product List!';
+        this.pageTitle = 'Product List';
         this.imageWidth = 50;
         this.imageMargin = 2;
         this.showImage = false;
+        this.listFilter = 'cart';
         //type of variables that we do not know when we are writing an application
         this.products = [
             {
