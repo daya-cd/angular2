@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector:'pm-products',
@@ -6,7 +6,7 @@ import { Component } from 'angular2/core';
 })
 export class ProductListComponent {
 
-	pageTitle:string='Product List';
+	pageTitle:string='Product List!';
 	imageWidth:number =50;
 	imageMargin:number=2;
 	showImage:boolean=false;
@@ -17,7 +17,7 @@ export class ProductListComponent {
 		"productName": "Leaf Rake",
 		"productCode": "GDN-0011",
 		"releaseDate": "March 19, 2016",
-		"description": "Leaf rake with 48-inch wooden handle.",
+		"description": "Le  af rake with 48-inch wooden handle.",
 		"price": 19.95,
 		"starRating": 3.2,
 		"imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"

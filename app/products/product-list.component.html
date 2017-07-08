@@ -42,7 +42,7 @@
 					forin iterates over the properties of an object. iterates over index.
 				-->
 
-					<tr *ngFor='#product of products'>
+					<tr *ngFor='let product of products'>
 						<td>
 							<img *ngIf='showImage' [src]='product.imageUrl'
 							     [title]='product.productName'

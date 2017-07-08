@@ -63,6 +63,10 @@ we can import in loader of the application like eg)
 
   <img [src]='product.imageurl'> //like interpolation.
 
+ ### Event binding
+
+  <button (click)='toggleImage()'>
+
 ## Notes:
 
 What is Typings ?
