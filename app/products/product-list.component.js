@@ -25,8 +25,10 @@ var ProductListComponent = (function () {
     };
     /* using onInit - life cycle hooks*/
     ProductListComponent.prototype.ngOnInit = function () {
+        var _this = this;
         console.log('In OnInit- life cycle hooks');
-        this.products = this._productService.getProducts();
+        this._productService.getProducts()
+            .subscribe(function (products) { return _this.products = products; }, function (error) { return _this.errorMessage = error; });
     };
     ProductListComponent.prototype.onRatingClicked = function (message) {
         this.pageTitle = 'Product List:' + message;

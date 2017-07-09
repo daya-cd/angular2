@@ -15,6 +15,7 @@ export class ProductListComponent implements OnInit {
     imageMargin: number = 2;
     showImage: boolean = false;
     listFilter: string;
+    errorMessage:string;
 
     //type of variables that we do not know when we are writing an application
     products: IProduct[];
@@ -31,7 +32,10 @@ export class ProductListComponent implements OnInit {
     /* using onInit - life cycle hooks*/
     ngOnInit(): void {
         console.log('In OnInit- life cycle hooks');
-        this.products =this._productService.getProducts();
+        this._productService.getProducts()
+            .subscribe(
+                products => this.products = products,
+                error =>  this.errorMessage = <any>error);
     }
 
     onRatingClicked(message: string): void
