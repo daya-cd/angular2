@@ -24,7 +24,7 @@ var ProductListComponent = (function () {
                 "description": "Le  af rake with 48-inch wooden handle.",
                 "price": 19.95,
                 "starRating": 3.2,
-                "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+                "imageUrl": "http://opencli  part.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
             },
             {
                 "productId": 2,
@@ -41,13 +41,21 @@ var ProductListComponent = (function () {
     ProductListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;
     };
+    /* using onInit - life cycle hooks*/
+    ProductListComponent.prototype.ngOnInit = function () {
+        console.log('In OnInit- life cycle hooks');
+    };
+    ProductListComponent.prototype.onRatingClicked = function (message) {
+        this.pageTitle = 'Product List:' + message;
+    };
     return ProductListComponent;
 }());
 ProductListComponent = __decorate([
     core_1.Component({
         selector: 'pm-products',
-        templateUrl: 'app/products/product-list.component.html',
-        styleUrls: ['app/products/product-list.component.css']
+        moduleId: module.id,
+        templateUrl: 'product-list.component.html',
+        styleUrls: ['product-list.component.css']
     })
 ], ProductListComponent);
 exports.ProductListComponent = ProductListComponent;
