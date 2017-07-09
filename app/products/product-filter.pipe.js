@@ -11,7 +11,7 @@ var ProductFilterPipe = (function () {
     function ProductFilterPipe() {
     }
     ProductFilterPipe.prototype.transform = function (value, filter) {
-        filter = filter ? filter.toLocaleLowerCase() : null;
+        // filter = filter ? filter.toLocaleLowerCase() : null;
         return filter ? value.filter(function (product) {
             return product.productName.toLocaleLowerCase().indexOf(filter) !== -1;
         }) : value;

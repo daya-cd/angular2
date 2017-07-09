@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import {ProductListComponent} from './products/product-list.component';
+import {ProductService} from "./products/product.service";
 
 /*
  Componet decorator
@@ -13,7 +14,7 @@ import {ProductListComponent} from './products/product-list.component';
     <h1>{{pageTitle}}</h1> 
     <pm-products></pm-products>
     </div>`,
-
+    providers:[ProductService]
 })
 
 

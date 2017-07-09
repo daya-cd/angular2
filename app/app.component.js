@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 var core_1 = require("@angular/core");
+var product_service_1 = require("./products/product.service");
 /*
  Componet decorator
  Prefix for clarity
@@ -21,7 +22,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: "<div>\n    <h1>{{pageTitle}}</h1> \n    <pm-products></pm-products>\n    </div>"
+        template: "<div>\n    <h1>{{pageTitle}}</h1> \n    <pm-products></pm-products>\n    </div>",
+        providers: [product_service_1.ProductService]
     })
     //PascalCasing f or class name
 ], AppComponent);
