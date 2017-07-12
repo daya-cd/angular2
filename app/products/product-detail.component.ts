@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IProduct } from './product';
+import { IProduct } from './products';
 
 @Component({
     moduleId:module.id,
